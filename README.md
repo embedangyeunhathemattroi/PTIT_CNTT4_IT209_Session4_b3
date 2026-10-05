@@ -42,7 +42,7 @@ git config --local user.email "trongtin@example.com"
 
 ### 4. Tao khoa SSH Ed25519
 
-May da co san khoa Ed25519 tai `C:\Users\TRONG TIN\.ssh\github_bai3`, nen khong tao de khoa cu.
+May da co san khoa Ed25519 tai `C:\Users\TRONG TIN\.ssh\github_bai3`
 
 Neu can tao moi, dung lenh:
 
@@ -114,12 +114,7 @@ Hi phamngoclinhtq2006! You've successfully authenticated, but GitHub does not pr
 ```
 
 Ket qua thuc te tren may hien tai:
-
-```text
-git@github.com: Permission denied (publickey).
-```
-
-Nguyen nhan: GitHub chua chap nhan khoa public hien tai. Can them noi dung file `github_bai3.pub` vao GitHub truoc khi chay lai lenh SSH va `git push`.
+![img.png](img.png)
 
 ### Kiem tra commit local
 
@@ -132,7 +127,3 @@ Ket qua:
 ```text
 d32ee30 Add SSH GitHub setup report
 ```
-
-## Ghi chu
-
-Khong dua private key vao bai nop. Chi su dung public key de them vao GitHub.
