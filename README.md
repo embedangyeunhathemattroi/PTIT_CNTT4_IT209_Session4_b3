@@ -94,7 +94,7 @@ git push -u origin main
 git remote -v
 ```
 
-Ket qua mong doi:
+Ket qua thuc te:
 
 ```text
 origin  git@github.com:phamngoclinhtq2006/git-bai1.git (fetch)
@@ -113,6 +113,26 @@ Ket qua mong doi sau khi them public key vao GitHub:
 Hi phamngoclinhtq2006! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+Ket qua thuc te tren may hien tai:
+
+```text
+git@github.com: Permission denied (publickey).
+```
+
+Nguyen nhan: GitHub chua chap nhan khoa public hien tai. Can them noi dung file `github_bai3.pub` vao GitHub truoc khi chay lai lenh SSH va `git push`.
+
+### Kiem tra commit local
+
+```bash
+git log --oneline
+```
+
+Ket qua:
+
+```text
+d32ee30 Add SSH GitHub setup report
+```
+
 ## Ghi chu
 
-Lan kiem tra tren may hien tai bi timeout khi chay `ssh -T -i ~/.ssh/github_bai3 git@github.com`. Can kiem tra lai ket noi mang/port SSH va dam bao public key da duoc them vao tai khoan GitHub truoc khi push.
+Khong dua private key vao bai nop. Chi su dung public key de them vao GitHub.
